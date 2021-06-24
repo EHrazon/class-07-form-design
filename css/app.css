@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/car1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay{
+    background: rgb(131,58,180);
+    background: linear-gradient(142deg, rgb(131 58 180 / 51%) 0%, rgb(101 172 208 / 62%) 60%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex label{
+    margin: 0 30px 0px 10px;
+}
+.flex div{   
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.container{
+    width: 700px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+    position: relative;
+}
+.signup-form{
+    background-color: #fff;
+    padding: 80px 50px;
+    border-radius: 10px;
+    position: relative;
+}
+h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+p{
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    position: relative;
+}
+form{
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 15px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 30px;
+    height: 25px;
+    padding: 0;
+    margin-bottom: 0;
+}
+strong{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.column{
+    flex-direction: column;
+    align-items: flex-start;
+}
+label{
+    font-size: 20px;
+}
+select{
+     margin-bottom: 10px;
+     width: 100%;
+     padding: 5px 15px;
+     height: 60px;
+     font-size: 25px;
+     border-radius: 7px;
+     border: 2px solid black;
+}
+textarea{
+     margin-bottom: 10px;
+     width: 100%;
+     padding: 10px 15px;
+     /* height: 60px; */
+     font-size: 25px;
+     border-radius: 7px;
+     border: 2px solid black;
+}
+button{
+    padding: 15px 40px;
+    border: 1px solid red;
+    font-size: 20px;
+    background-color: #e26344;
+    color: #fff;
+    border-radius: 5px;
+}
+.circle{
+   
+}
+
+.signup-form::before{
+    content: '';
+    border-bottom-right-radius: 100%;
+    width: 80%;
+    height: 30%;
+    background: #f30abd59;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.signup-form::after{
+    content: '';
+    border-top-left-radius: 100%;
+    width: 80%;
+    height: 30%;
+    background: #6d7ba0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+.move-icon{
+    color: #fff;
+    font-size: 50px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    animation-name: move;
+    animation-duration: 10s;
+    z-index: 10;
+    /*transform: rotate(0deg);*/
+}
+
+
+@keyframes move{
+    from{}
+    to{op: 30%;
+    left: 70%;
+   /* transform: rotate(180deg);*/
+}
+}
